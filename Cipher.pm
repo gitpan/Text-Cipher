@@ -9,7 +9,7 @@ package Text::Cipher;
 
 
 # Boilerplate package beginning
-use 5.008;
+use 5.006;
 use strict;
 use warnings;
 use Carp;
@@ -24,7 +24,7 @@ use constant {
 
 # UNIVERSAL class variables
 our @ISA = qw(Regexp::Tr);
-our $VERSION = "1.00";
+our $VERSION = "1.01";
 
 BEGIN {
     *clean           = \&Regexp::Tr::flush;
@@ -263,6 +263,10 @@ number and going to the "last" number.
 =head1 HISTORY
 
 =over 8
+
+=item 1.01
+
+Tested under Perl 5.6, thanks to John Alden.
 
 =item 1.00
 
